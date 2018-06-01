@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Наталия Хлобощина](https://up.htmlacademy.ru/htmlcss/21/user/662983).
-* Наставник: [Сергей (firefoxic) Артёмов](https://htmlacademy.ru/profile/firefoxic)
+* Наставник: [Сергей (firefoxic) Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
