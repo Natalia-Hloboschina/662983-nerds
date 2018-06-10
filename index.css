@@ -1,8 +1,8 @@
 
-#okno {
+#modal {
   display: none;
 }
-#okno:target {
+#modal:target {
   display: block;
 }
 .close {
