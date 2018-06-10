@@ -1,0 +1,19 @@
+
+#okno {
+  display: none;
+}
+#okno:target {
+  display: block;
+}
+.close {
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:active {
+  opacity: 0.2;
+}
+

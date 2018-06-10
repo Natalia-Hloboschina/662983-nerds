@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <div class="main-navigation">
         <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
@@ -22,7 +22,7 @@
             <a class="login-link" href="login.html">Корзина</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
@@ -133,7 +133,7 @@
           тел.
           <a href="tel:+78122757575">+7(812)275-75-75</a>
         </p>
-        <a href="#nowhere" class="button">Напишите нам</a>
+        <button><a href="#okno" class="button">Напишите нам</a></button>
       </section>
     </main>
     <footer class="main-footer">
@@ -147,7 +147,7 @@
         <p>Скидка 10% для друзей из социальных друзей.</p>
       </div>
     </footer>
-    <section class="modal modal-login">
+    <section class="modal modal-login" id="okno">
       <h2>Напишите нам</h2>
       <p>Введите свое имя и e-mail</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -165,7 +165,8 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <span class="modal-close"></span>
+      <a href="#nowhere" class="close">
+      <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></a>
     </section>
   </body>
 </html>
