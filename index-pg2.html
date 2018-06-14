@@ -34,14 +34,13 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <div class="filter-cost">
-              <label for="cost">Стоимость:</label>
-              <input type="range" id="cost" name="cost" min="0" max="20000" step="1">
-            </div>
-            <div class="filter-range">
-              <output name="cost">От 0</output>
-              <output name="cost">До15 000</output>
-            </div>
+            <legend>Стоимость:</legend>
+            <label for="cost-from"></label>
+            <input type="range" id="cost-from" name="cost-from" min="0" max="20000" step="1">
+            <output name="cost-from">От 0</output>
+            <label for="cost-before"></label>
+            <input type="range" id="cost-before" name="cost-before" min="0" max="20000" step="1">
+            <output name="cost-before">До 15 000</output>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
