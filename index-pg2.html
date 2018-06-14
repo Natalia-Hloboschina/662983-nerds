@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
     <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-sub-menuheader">
       <div class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -25,7 +27,9 @@
       </div>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+      <div class="header">
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+      </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
@@ -35,13 +39,13 @@
               <input type="range" id="cost" name="cost" min="0" max="20000" step="1">
             </div>
             <div class="filter-range">
-              <output name="cost">От  0</output>
-              <output name="cost">До  15 000</output>
+              <output name="cost">От 0</output>
+              <output name="cost">До15 000</output>
             </div>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
-            <ul>
+            <ul class="filter-category">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
@@ -87,14 +91,16 @@
       <section class="sorting-template">
         <h2>Сортировать:</h2>
         <h3 class="visually-hidden">Тип</h3>
-        <ul class="sorting-list">
-          <li class="sorting-item"><a href="#nowhere">По цене</a></li>
-          <li class="sorting-item"><a href="#nowhere">По типу</a></li>
+        <ul class="sorting-type">
+          <li class="sorting-current">По цене</li>
+          <li class="sorting-item">
+            <a href="#nowhere">По типу</a>
+          </li>
           <li class="sorting-item"><a href="#nowhere">По названию</a></li>
         </ul>
         <h3 class="visually-hidden">Направление</h3>
-        <ul class="sorting-dir-list">
-          <li class="sorting-dir-item"><a class="sort-dir-asc" href="#nowhere">По убыванию</a></li>
+        <ul class="sorting-dir-type">
+          <li class="sorting-current">По убыванию</li>
           <li class="sorting-dir-item"><a class="sort-dir-desc" href="#nowhere">По возрастанию</a></li>
         </ul>
       </section>
@@ -103,7 +109,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <b><img src="img/sedona.jpg" width="360" height="576" alt="Sedona"></b>
-            <div class="hiddenu-menu">
+            <div class="hidden-menu">
               <h3><a href="#nowhere">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
               <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
@@ -169,32 +175,32 @@
       </section>
       <section class="modal modal-login" id="modal">
         <h2>Напишите нам</h2>
-        <p>Введите свое имя и e-mail</p>
+        <p class="visually-hidden">Введите свое имя и e-mail</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <p class="login-item">
             <label for="fullname">Ваше имя:</label>
             <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
           </p>
-          <p>
+          <p class="login-item">
             <label for="e-mail">Ваш e-mail:</label>
             <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
           </p>
-          <p>
+          <p class="login-item">
             <label for="message">Текст письма:</label>
             <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <a href="#nowhere" class="close">
+        <a href="#nowhere" class="modal-close">
         <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></a>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-botton" href="https://vk.com/feed">Вконтакте</a></li>
-          <li><a class="social-botton" href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a class="social-botton" href="https://www.instagram.com">Инстаграм</a></li>
+          <li><a class="social-button" href="https://vk.com/feed">Вконтакте</a></li>
+          <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social-button" href="https://www.instagram.com">Инстаграм</a></li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных друзей.</p>

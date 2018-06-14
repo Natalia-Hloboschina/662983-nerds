@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
     <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -67,19 +69,19 @@
       <section class="features">
         <h2 class="visually-hidden">Каталог услуг</h2>
         <ul class="features-list">
-          <li class="illustration-1">
+          <li class="feature-item illustration-1">
             <img src="img/illustration-1.png" width="300" height="146" alt="Иллюстрация">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button" href="#nowhere">Заказать</a>
           </li>
-          <li class="illustration-2">
+          <li class="feature-item illustration-2">
             <img src="img/illustration-2.png" width="300" height="146" alt="Иллюстрация">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button" href="#nowhere">Заказать</a>
           </li>
-          <li class="illustration-3">
+          <li class="feature-item illustration-3">
             <img src="img/illustration-3.png" width="300" height="146" alt="Иллюстрация">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -93,7 +95,7 @@
           <b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
-          <ul class="studio-item">
+          <ul class="studio-items">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных предложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -101,22 +103,21 @@
         </div>
         <div class="promo">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип дизайн-студии «Нёрдс»">
-          <h3 class="section-title">С 2004 года любим точность во всем:</h3>
+          <h3>С 2004 года любим точность во всем:</h3>
           <table class="section-title">
             <tr>
-              <th>Уровень самоотдачи</th>
-              <th>Собдюдение сроков</th>
-              <th>Минимальная предоплата</th>
+              <th>Уровень<br> самоотдачи</th>
+              <th>Собдюдение<br> сроков</th>
+              <th>Минимальная<br> предоплата</th>
             </tr>
             <tr>
-              <td>146<sup>%</sup></td>
               <td>146<sup>%</sup></td>
               <td>100<sup>%</sup></td>
               <td>50<sup>%</sup></td>
             </tr>
           </table>
           <nav>
-            <ul class="nav-botton">
+            <ul class="nav-button">
               <li><a class="nav-html" href="https://htmlacademy.ru/">htmlacademy</a></li>
               <li><a class="nav-borodinski" href="#nowhere">borodinski</a></li>
               <li><a class="nav-pink" href="#nowhere">Pink</a></li>
@@ -137,32 +138,32 @@
       </section>
       <section class="modal modal-login" id="modal">
         <h2>Напишите нам</h2>
-        <p>Введите свое имя и e-mail</p>
+        <p class="visually-hidden">Введите свое имя и e-mail</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
+          <p class="login-item">
             <label for="fullname">Ваше имя:</label>
             <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
           </p>
-          <p>
+          <p class="login-item">
             <label for="e-mail">Ваш e-mail:</label>
             <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
           </p>
-          <p>
+          <p class="login-item">
             <label for="message">Текст письма:</label>
             <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <a href="#nowhere" class="close">
+        <a href="#nowhere" class="modal-close">
         <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></a>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
         <ul>
-          <li><a class="social-botton" href="https://vk.com/feed">Вконтакте</a></li>
-          <li><a class="social-botton" href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a class="social-botton" href="https://www.instagram.com">Инстаграм</a></li>
+          <li><a class="social-button" href="https://vk.com/feed">Вконтакте</a></li>
+          <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social-button" href="https://www.instagram.com">Инстаграм</a></li>
         </ul>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных друзей.</p>
