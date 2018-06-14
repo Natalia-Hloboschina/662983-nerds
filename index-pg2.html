@@ -35,12 +35,14 @@
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <label for="cost-from"></label>
-            <input type="range" id="cost-from" name="cost-from" min="0" max="20000" step="1">
-            <output name="cost-from">От 0</output>
-            <label for="cost-before"></label>
-            <input type="range" id="cost-before" name="cost-before" min="0" max="20000" step="1">
-            <output name="cost-before">До 15 000</output>
+            <div class="filter-range">
+              <label for="cost-from">От</label>
+              <input type="range" id="cost-from" name="cost" min="0" max="20000" value="0">
+              <output name="cost-from">0</output>
+              <label for="cost-before">До</label>
+              <input type="range" id="cost-before" name="cost" min="0" max="20000" value="15 000">
+              <output name="cost-before">15 000</output>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
