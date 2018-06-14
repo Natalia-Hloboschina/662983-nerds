@@ -32,16 +32,18 @@
       </div>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru" oninput="cost_min_output.value=cost_min_input.value.slice(0,-3)+' '+cost_min_input.value.slice(-3);cost_max_output.value=cost_max_input.value.slice(0,-3)+' '+cost_max_input.value.slice(-3)">
           <fieldset>
             <legend>Стоимость:</legend>
             <div class="filter-range">
-              <label for="cost-from">От</label>
-              <input type="range" id="cost-from" name="cost" min="0" max="20000" value="0">
-              <output name="cost-from">0</output>
-              <label for="cost-before">До</label>
-              <input type="range" id="cost-before" name="cost" min="0" max="20000" value="15 000">
-              <output name="cost-before">15 000</output>
+              <label for="cost_min_input">
+              От <output id="cost_min_output">0</output>
+              </label>
+              <input type="range" id="cost_min_input" name="cost" min="0" max="20000" value="0">
+              <label for="cost_max_input">
+              До <output id="cost_max_output">15 000</output>
+              </label>
+              <input type="range" id="cost_max_input" name="cost" min="0" max="20000" value="15000">
             </div>
           </fieldset>
           <fieldset>
