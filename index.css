@@ -1,9 +1,4 @@
 
-html,
-body {
-  min-width: 1210px;
-  min-height: 2476px;
-}
 
 body {
     margin: 0;
@@ -138,36 +133,41 @@ a {
     border-bottom: 2px solid #fb565a;
 }
 
+
+
+.visually-hidden {
+  display: none;
+}
+
 .slider {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
+  height: 1293px;
+  margin-bottom: 80px;
     background-color: #eeeeee;
 }
 
 .slider-advantage {
+  min-height: 431px;
+  margin-bottom: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
 .slider-features{
   position: relative;
+  flex-shrink: 0;
 }
 
 
 
 .slider-features-1 {
-  margin-top: -32px;
   width: 382px;
-  height: 270px;
-    margin-right: 20px;
 }
 
 .slide-1 {
   margin: 0;
   padding: 0;
-  width: 760px;
+  align-self: flex-end;
 }
 
 .slide-1 img {
@@ -175,35 +175,40 @@ a {
   height: 413px;
   margin-left: auto;
   margin-right: auto;
-}
-.slider-features-2 {
-  width: 532px;
-  height: 270px;
-  margin-right: -110px;
+  margin-bottom: -6px;
 }
 
-figure .slide-2 {
-  width: 663px;
+.slider-features-2 {
+  width: 532px;
+}
+
+.slide-2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 0px;
+  margin-left: -35px;
+  align-self: flex-end;
 }
 
 .slide-2 img {
+  margin-bottom: -6px;
   width: 663px;
   height: 430px;
 }
 
-
-
 .slider-features-3 {
   width: 410px;
-  height: 270px;
-  margin-right: -90px;
 }
 
-figure .slide-3 {
-  width: 759px;
+.slide-3 {
+  margin: 0;
+  padding: 0;
+  margin-left: -35px;
+  align-self: flex-end;
 }
 
 .slide-3 img {
+  margin-bottom: -6px;
   width: 759px;
   height: 411px;
 }
@@ -213,22 +218,28 @@ figure .slide-3 {
     line-height: 55px;
 }
 
-.slider-advantage  p{
-  margin-top: 25px;
-  margin-bottom: 0;
+.slider p {
+  margin: 0;
 }
 
 
 .slider-radio {
   display: flex;
+  position: relative;
+  top: -130px;
   width: 100px;
   margin-left: auto;
   margin-right: auto;
     list-style: none;
 }
 
+
+
+
+
 .features {
-  margin-bottom: 125px;
+  margin-bottom: 40px;
+    border-bottom: 2px solid #d7dcde;
 }
 
 .features-list {
@@ -243,6 +254,7 @@ figure .slide-3 {
 .feature-item {
   width: 300px;
   margin-right: 100px;
+  padding-bottom: 80px;
 }
 
 .feature-item:last-child {
@@ -285,6 +297,7 @@ figure .slide-3 {
 .studio-itemes {
   display: flex;
   justify-content: space-between;
+  padding-top: 0;
   padding-bottom: 70px;
 }
 
@@ -353,9 +366,10 @@ figure .slide-3 {
   display: flex;
   justify-content: space-around;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
     list-style: none;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
@@ -380,15 +394,18 @@ figure .slide-3 {
     background-image: url("img/contacts.png");
     background-position: top center;
     background-repeat: repeat;
-  width: 1140px;
-  height: 416px;
+  width: 1160px;
+  height: 418px
 }
 
 .contacts-nerds {
+  position: relative;
   width: 320px;
-  height: 308px;
+  height: 253px;
+  top: 55px;
+  bottom: 55px;
+  padding-top: 55px;
   background-color: white;
-  margin-top: 55px;
   text-align: center;
   vertical-align: 50px;
 }
@@ -406,15 +423,25 @@ figure .slide-3 {
 }
 
 .modal {
+  width: 965px;
+  min-width: 965px;
+  min-height: 590px;
+  margin: auto;
     background-color: #ffffff;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-logines {
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .modal h2 {
     font-size: 45px;
     line-height: 45px;
 }
-
 .modal-login {
     display: none;
     font-size: 16px;
@@ -440,8 +467,14 @@ figure .slide-3 {
     opacity: 0.2;
 }
 
+.login-item input {
+  width: 360px;
+}
+
 .login-item input,
 .login-item textarea {
+  padding: 15px;
+  margin-top: 12px;
     color: rgba(68, 68, 68, 0.5);
     border: 2px solid #d7dcde;
 }
@@ -463,13 +496,35 @@ figure .slide-3 {
     border-color: #e74246;
 }
 
+.modal-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
     background-color: #eeeeee;
 }
 
 .page-title {
+    padding-top: 70px;
+    padding-bottom: 105px;
+    margin: 0;
+    text-align: center;
     font-size: 55px;
     line-height: 55px;
+  margin-bottom: 60px;
 }
 
 .filter fieldset {
@@ -525,15 +580,28 @@ figure .slide-3 {
     color: rgba(0, 0, 0, 0.5);
     background-color: #d5d5d5;
 }
+.sorting-template,
+.sorting-template ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
 
 .sorting-template ul {
+  margin: 0;
+  padding-left: 0;
     list-style: none;
 }
 
 .sorting-template h2 {
+  /*margin-right: 260px;*/
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
+}
+.sorting-type li {
+
 }
 
 .sorting-type a,
@@ -564,6 +632,8 @@ figure .slide-3 {
 }
 
 .catalog-item {
+  width: 360px;
+  margin-right: 40px;
     background-color: #FFFFFF;
 }
 
@@ -572,6 +642,8 @@ figure .slide-3 {
 }
 
 .hidden-menu {
+  width: 360px;
+  text-align: center;
     background-color: #eeeeee;
 }
 
@@ -586,8 +658,8 @@ figure .slide-3 {
     line-height: 18px;
     color: #666666;
 }
-
 .pagination-list {
+  display: flex;
     list-style: none;
 }
 
@@ -619,12 +691,13 @@ figure .slide-3 {
     background-color: #ffffff;
 }
 
-.main-footer {
-}
+
 
 .main-footer .container {
   display: flex;
   align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .footer-social {
@@ -653,4 +726,50 @@ figure .slide-3 {
 }
 .discounts {
   width: 580px;
+}
+
+.inner-page .header {
+  margin: 0;
+}
+
+.store-templates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+}
+
+.template-directory {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+}
+
+.catalog-list {
+  max-height: 2170px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.catalog {
+  width: 760px;
+  margin: auto;
+}
+
+.inner-page {
+  margin-bottom: 60px;
+}
+
+.filter-range {
+   margin-top: 55px;
+  margin-bottom: 60px;
+}
+
+.filter-category {
+  padding-left: 0;
 }

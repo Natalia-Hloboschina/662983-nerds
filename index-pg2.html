@@ -8,8 +8,8 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="main-sub-menuheader">
-      <div class="main-navigation">
+    <header class="main-header">
+      <div class="main-navigation container">
         <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
@@ -20,7 +20,7 @@
           <li><a href="#nowhere">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">
+          <li>
             <a class="login-link" href="login.html">Корзина</a>
           </li>
         </ul>
@@ -30,6 +30,7 @@
       <div class="header">
         <h1 class="page-title">Магазин готовых шаблонов</h1>
       </div>
+      <div class="store-templates">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru" oninput="cost_min_output.value=cost_min_input.value.slice(0,-3)+' '+cost_min_input.value.slice(-3);cost_max_output.value=cost_max_input.value.slice(0,-3)+' '+cost_max_input.value.slice(-3)">
@@ -50,40 +51,40 @@
             <legend>Сетка:</legend>
             <ul class="filter-category">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                <input class=" filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
+                <input class=" filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber">
+                <input class=" filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
-            <ul>
+            <ul class="filter-category">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                 <label for="filter-basket">Корзина</label>
               </li>
             </ul>
@@ -91,6 +92,7 @@
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
+        <div class="template-directory">
       <section class="sorting-template">
         <h2>Сортировать:</h2>
         <h3 class="visually-hidden">Тип</h3>
@@ -159,16 +161,7 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <b>Nёrds design studio</b>
-        <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная,д.19/8<br>
-          тел.
-          <a href="tel:+78122757575">+7(812)275-75-75</a>
-        </p>
-        <a href="#modal" class="button">Напишите нам</a>
+        <section class="pagination">
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#nowhere">2</a></li>
@@ -176,10 +169,35 @@
           <li class="pagination-item"><a href="#nowhere">Следующая</a></li>
         </ul>
       </section>
+      </section>
+      </div>
+    </div>
+
+
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts-nerds">
+        <b>Nёrds design studio</b>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная,д.19/8<br>
+          тел.
+          <a href="tel:+78122757575">+7(812)275-75-75</a>
+        </p>
+        <a href="#modal" class="button">Напишите нам</a>
+          </div>
+      </section>
+
       <section class="modal modal-login" id="modal">
+  <div class="modal-logines">
+  <div class="modal-name">
         <h2>Напишите нам</h2>
         <p class="visually-hidden">Введите свое имя и e-mail</p>
+  <a href="#nowhere" class="modal-close">
+        <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></a>
+  </div>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-item">
           <p class="login-item">
             <label for="fullname">Ваше имя:</label>
             <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
@@ -188,25 +206,27 @@
             <label for="e-mail">Ваш e-mail:</label>
             <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
           </p>
+            </div>
           <p class="login-item">
             <label for="message">Текст письма:</label>
-            <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
+            <textarea class="textarea" name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
-        <a href="#nowhere" class="modal-close">
-        <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></a>
+    </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
+  <div class="container">
+        <ul class="footer-social">
           <li><a class="social-button" href="https://vk.com/feed">Вконтакте</a></li>
           <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
           <li><a class="social-button" href="https://www.instagram.com">Инстаграм</a></li>
         </ul>
+    <div class="discounts">
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных друзей.</p>
+      </div>
       </div>
     </footer>
   </body>
