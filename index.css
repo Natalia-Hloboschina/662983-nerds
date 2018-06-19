@@ -1,3 +1,9 @@
+html,
+body {
+  min-width: 1200px;
+  min-height: 2475px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -61,6 +67,10 @@ a {
 
 
 /*main-header*/
+
+.main-header {
+  margin-bottom: 0;
+}
 
 .main-navigation {
   display: flex;
@@ -168,7 +178,6 @@ a {
   height: 413px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -6px;
 }
 
 .slider-features-2 {
@@ -176,15 +185,13 @@ a {
 }
 
 .slide-2 {
-  align-self: flex-end;
   margin: 0;
   padding: 0;
-  margin-top: 0px;
   margin-left: -35px;
+  align-self: flex-end;
 }
 
 .slide-2 img {
-  margin-bottom: -6px;
   width: 663px;
   height: 430px;
 }
@@ -201,7 +208,6 @@ a {
 }
 
 .slide-3 img {
-  margin-bottom: -6px;
   width: 759px;
   height: 411px;
 }
@@ -285,7 +291,7 @@ a {
 }
 
 
-/*.studio-itemes */
+/*studio*/
 
 .studio-itemes {
   display: flex;
@@ -297,9 +303,9 @@ a {
 .studio-item {
   display: flex;
   flex-direction: column;
-  width: 660px;
   justify-content: space-between;
   padding-top: 40px;
+  width: 660px;
 }
 
 .studio-items {
@@ -325,11 +331,14 @@ a {
   line-height: 45px;
 }
 
+
+/*promo*/
+
 .promo {
   display: flex;
   flex-direction: column;
-  width: 360px;
   justify-content: space-between;
+  width: 660px;
 }
 
 .promo img {
@@ -356,9 +365,7 @@ a {
   justify-content: space-around;
   margin: 0;
   margin-bottom: 80px;
-  padding: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0;
   list-style: none;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -377,16 +384,15 @@ a {
 }
 
 
-/*.contacts */
+/*contacts*/
 
 .contacts {
+  padding-bottom: 110px;
   color: #000000;
   background-color: #f8f5f2;
   background-image: url("img/contacts.png");
   background-position: top center;
   background-repeat: repeat;
-  width: 1160px;
-  height: 418px
 }
 
 .contacts-nerds {
@@ -413,21 +419,21 @@ a {
 }
 
 
-/*.modal*/
+/*modal*/
 
 .modal {
-  background-color: #ffffff;
-  box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.5);
-  width: 965px;
-  min-width: 965px;
-  min-height: 590px;
   margin: auto;
+  width: 965px;
+  min-height: 590px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 hsla(180, 100%, 0%, 0.75);
 }
 
-.modal-logines {
-  width: 760px;
+.modal-modal,
+.inner-page .modal-modal {
   display: flex;
   flex-direction: column;
+  width: 760px;
   margin: auto;
 }
 
@@ -446,6 +452,18 @@ a {
 .form-item {
   display: flex;
   justify-content: space-between;
+}
+
+.login-item input {
+  width: 360px;
+}
+
+.login-item input,
+.login-item textarea {
+  padding: 15px;
+  margin-top: 12px;
+  color: rgba(68, 68, 68, 0.5);
+  border: 2px solid #d7dcde;
 }
 
 .modal h2 {
@@ -476,19 +494,6 @@ a {
   opacity: 0.2;
 }
 
-.login-item input {
-  width: 340px;
-}
-
-.login-item input,
-.login-item textarea {
-  padding: 15px;
-  padding-right: 0px;
-  margin-top: 12px;
-  color: rgba(68, 68, 68, 0.5);
-  border: 2px solid #d7dcde;
-}
-
 .login-item input:hover,
 .login-item textarea:hover {
   border-color: #b4b9bb;
@@ -507,7 +512,7 @@ a {
 }
 
 
-/*.main-footer*/
+/*main-footer*/
 
 .main-footer {
   padding-top: 70px;
@@ -548,9 +553,9 @@ a {
 }
 
 
-/*.header*/
+/*filters-header*/
 
-.header {
+.filters-header {
   background-color: #eeeeee;
 }
 
@@ -570,6 +575,8 @@ a {
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -593,11 +600,11 @@ a {
 }
 
 .filter ul {
+  padding-left: 0;
   font-size: 16px;
   line-height: 20px;
   color: rgb(0, 0, 0, 0.7);
   list-style: none;
-  padding-left: 0;
 }
 
 .filter-range {
@@ -642,19 +649,21 @@ a {
 .sorting-template ul {
   display: flex;
   justify-content: space-between;
+  padding: 0;
   align-items: center;
   margin-bottom: 60px;
 }
 
 .sorting-template ul {
   margin: 0;
-  padding-left: 0;
   list-style: none;
 }
 
 .sorting-template h2 {
   font-size: 18px;
   line-height: 18px;
+  padding: 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -679,11 +688,6 @@ a {
 .sorting-current {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
-}
-
-.catalog {
-  width: 760px;
-  margin: auto;
 }
 
 .catalog-list {
@@ -725,9 +729,6 @@ a {
   line-height: 18px;
   color: #666666;
 }
-
-
-/*pagination-list*/
 
 .pagination-list {
   display: flex;

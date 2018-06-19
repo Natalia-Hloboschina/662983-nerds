@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -26,9 +25,9 @@
         </ul>
       </div>
     </header>
-    <main class="container">
+    <main class="">
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-      <section class="slider">
+      <section class="slider container">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="slider-advantage">
           <div class="slider-features slider-features-1">
@@ -75,7 +74,7 @@
           </li>
         </ul>
       </section>
-      <section class="features">
+      <section class="features container">
         <h2 class="visually-hidden">Каталог услуг</h2>
         <ul class="features-list">
           <li class="feature-item illustration-1">
@@ -99,7 +98,7 @@
         </ul>
       </section>
       <h2 class="visually-hidden">Реклама</h2>
-      <section class="studio">
+      <section class="studio container">
         <div class="studio-itemes">
           <div class="studio-item">
             <b>Мы-маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -137,7 +136,7 @@
           </ul>
         </nav>
       </section>
-      <section class="contacts">
+      <section class="contacts container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-nerds">
           <b>Nёrds design studio</b>
@@ -149,35 +148,38 @@
           <a href="#modal" class="button">Напишите нам</a>
         </div>
       </section>
-      <section class="modal modal-login " id="modal ">
-        <div class="modal-logines ">
+      <section class="modal modal-login" id="modal">
+        <div class="modal-modal">
           <div class="modal-name">
             <h2>Напишите нам</h2>
             <p class="visually-hidden">Введите свое имя и e-mail</p>
             <a href="#nowhere" class="modal-close">
             <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></a>
           </div>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form-item">
+          <div>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form-item">
+                <p class="login-item">
+                  <label for="fullname">Ваше имя:</label>
+                  <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+                </p>
+                <p class="login-item">
+                  <label for="e-mail">Ваш e-mail:</label>
+                  <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+                </p>
+              </div>
               <p class="login-item">
-                <label for="fullname">Ваше имя:</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
-              </p>
               <p class="login-item">
-                <label for="e-mail">Ваш e-mail:</label>
-                <input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+                <label for="message">Текст письма:</label>
+                <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
               </p>
-            </div>
-            <p class="login-item">
-              <label for="message">Текст письма:</label>
-              <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="button" type="submit">Отправить</button>
-          </form>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="container">
         <ul class="footer-social">
           <li><a class="social-button" href="https://vk.com/feed">Вконтакте</a></li>
