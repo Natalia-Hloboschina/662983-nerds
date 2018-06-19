@@ -70,6 +70,7 @@ a {
 
 .main-header {
   margin-bottom: 0;
+  background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -80,7 +81,6 @@ a {
   line-height: 30px;
   padding-top: 50px;
   color: #000000;
-  background-color: #eeeeee;
 }
 
 .main-header-logo img {
@@ -235,6 +235,7 @@ a {
 /*.features*/
 
 .features {
+  background-color: #ffffff;
   margin-bottom: 40px;
   border-bottom: 2px solid #d7dcde;
 }
@@ -292,6 +293,10 @@ a {
 
 
 /*studio*/
+
+.studio {
+  background-color: #ffffff;
+}
 
 .studio-itemes {
   display: flex;
@@ -515,6 +520,7 @@ a {
 /*main-footer*/
 
 .main-footer {
+  background-color: #ffffff;
   padding-top: 70px;
   margin-bottom: 70px;
 }
@@ -572,6 +578,7 @@ a {
 .store-templates {
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .filter fieldset {
