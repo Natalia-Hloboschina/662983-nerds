@@ -768,7 +768,7 @@ img {
 
 .main-footer {
   background-color: #ffffff;
-  padding-top: 70px;
+  padding-top: 65px;
   margin-bottom: 70px;
 }
 
@@ -840,13 +840,13 @@ img {
   text-align: center;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 47px;
-  margin-bottom: 60px;
+  margin-top: 45px;
+  margin-bottom: 52px;
 }
 
 fieldset {
@@ -912,20 +912,22 @@ fieldset:not(:first-child) {
 }
 
 .price-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 260px;
   font-size: 0;
 }
 
 .price-controls label {
-  display: inline-block;
-  width: 48%;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .price-controls input {
-  width: 60px;
-  padding: 5px;
-  margin-left: 20px;
+  width: 80px;
+  padding: 10px 0;
+  margin-left: 5px;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -962,15 +964,15 @@ fieldset:not(:first-child) {
 }
 
 fieldset:nth-child(2) .filter-option {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 fieldset:nth-child(3) .filter-option {
-  padding-bottom: 18px;
+  padding-bottom: 5px;
 }
 
 .filter-option {
-  padding-left: 45px;
+  padding-left: 39px;
 }
 
 .filter-option label {
@@ -978,16 +980,18 @@ fieldset:nth-child(3) .filter-option {
   display: block;
   cursor: pointer;
   user-select: none;
+  left: -4px
 }
 
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -41px;
-  top: -3;
-  width: 20px;
-  height: 20px;
+  left: -36px;
+  top: -4;
+  width: 19px;
+  height: 19px;
   border: 2px solid #000000;
+  border-radius: 4px;
   opacity: 0.4;
 }
 
@@ -995,10 +999,9 @@ fieldset:nth-child(3) .filter-option {
   content: "";
   position: absolute;
   top: -3px;
-  left: -41px;
-  width: 21px;
-  height: 21px;
-  border-radius: 2px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
   background-color: #ffffff;
   background-image: url("img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -1009,7 +1012,7 @@ fieldset:nth-child(3) .filter-option {
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -36px;
   top: -2px;
   width: 17px;
   height: 17px;
@@ -1022,7 +1025,7 @@ fieldset:nth-child(3) .filter-option {
   content: "";
   position: absolute;
   top: 6px;
-  left: -32px;
+  left: -28px;
   width: 9px;
   height: 9px;
   background-color: #000000;
@@ -1030,7 +1033,7 @@ fieldset:nth-child(3) .filter-option {
   opacity: 0.4;
 }
 
-.filter-category l1 {
+.filter-category .filter-option {
   margin-top: 15px;
 }
 
@@ -1105,7 +1108,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .sorting-template {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .sorting-type-dir {
@@ -1117,7 +1120,6 @@ fieldset:nth-child(3) .filter-option {
   line-height: 18px;
   padding: 0;
   margin: 0;
-  margin-right: px;
   text-transform: uppercase;
 }
 
@@ -1173,32 +1175,33 @@ fieldset:nth-child(3) .filter-option {
   position: relative;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 33px;
+  margin-top: 67px;
   background-color: #FFFFFF;
 }
 
-.catalog-item .item {
-  margin: 0;
-  padding: 0;
-  width: 360px;
-  height: 40px;
-  opacity: 0.1;
+.catalog-item:nth-last-child(1) li {
+  border: #ff3300;
 }
 
-.catalog-item .item::before {
+.catalog-item::before {
   content: "";
   position: absolute;
-  top: 1px;
+  top: -40px;
   left: 0px;
   width: 360px;
   height: 40px;
   background-image: url("img/browser.svg");
   background-position: top center;
   background-repeat: repeat;
+  opacity: 0.1;
 }
 
-.catalog-item .item:hover {
-  opacity: 0.9;
+.catalog-item:hover::before {
+  opacity: 1;
+}
+
+.catalog-item:hover .hidden-menu {
+  opacity: 1;
 }
 
 .catalog-item:nth-child(2n) {
@@ -1206,7 +1209,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .catalog-item:hover {
-  box-shadow: -5px 12px 10px rgba(0, 0, 0, 0.2), 5px 12px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 12px 10px rgba(0, 0, 0, 0.2), 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hidden-menu {
@@ -1216,7 +1219,7 @@ fieldset:nth-child(3) .filter-option {
   width: 360px;
   height: 232px;
   opacity: 0;
-  top: 390px;
+  top: 345px;
   text-align: center;
   background-color: #eeeeee;
 }
@@ -1225,11 +1228,16 @@ fieldset:nth-child(3) .filter-option {
   opacity: 1;
 }
 
+.hidden-menu h3 {
+  padding-top: 13px;
+  text-transform: uppercase;
+}
+
 .hidden-menu p {
   width: 240px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
@@ -1242,7 +1250,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .catalog-item .button {
-  padding: 19px 62px;
+  padding: 16px 60px;
 }
 
 .pagination-list {
@@ -1251,13 +1259,13 @@ fieldset:nth-child(3) .filter-option {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 55px;
 }
 
 .pagination-item {
   margin: 0;
   padding: 0;
   margin-right: 12px;
-  margin-top: 27px;
   margin-bottom: 60px;
 }
 
