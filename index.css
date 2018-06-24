@@ -209,7 +209,7 @@ img {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 5;
   width: 160px;
   height: 18px;
   text-align: center;
@@ -672,7 +672,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
-  z-index: 5;
+  z-index: 100;
   top: calc(50% - 590px / 2);
   left: calc(50% - 965px / 2);
 }
