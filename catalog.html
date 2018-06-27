@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
@@ -115,14 +116,14 @@
                 <li class="sorting-current">
                   <span class="visually-hidden">По убыванию</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                    <path fill="#231F20" d="M5.5 10L0 0h11" fill="#fff"></path>
+                    <path fill="#231F20" d="M5.5 10L0 0h11"></path>
                   </svg>
                 </li>
                 <li class="sorting-dir-item">
                   <a class="sort-dir-desc" href="#nowhere">
                     <span class="visually-hidden">По возрастанию</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path fill="#231F20" d="M5.5 0L0 10h11z" fill="#fff"></path>
+                      <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
                     </svg>
                   </a>
                 </li>
@@ -135,7 +136,7 @@
               <li class="catalog-item">
                 <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
                 <div class="hidden-menu">
-                  <h3>Sedona</h3>
+                  <a href="#nowhere">Sedona</a>
                   <p>Информационный сайт<br> для туристов</p>
                   <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
                 </div>
@@ -143,7 +144,7 @@
               <li class="catalog-item">
                 <img src="img/pink.jpg" width="360" height="576" alt="Pink">
                 <div class="hidden-menu">
-                  <h3>Pink App</h3>
+                  <a href="#nowhere">Pink App</a>
                   <p>Продуктовый лендинг приложения для IOS и Андроид</p>
                   <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
                 </div>
@@ -151,7 +152,7 @@
               <li class="catalog-item">
                 <img src="img/borodinski.jpg" width="360" height="576" alt="Borodinski">
                 <div class="hidden-menu">
-                  <h3>Barbershop</h3>
+                  <a href="#nowhere">Barbershop</a>
                   <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
                   <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
                 </div>
@@ -159,7 +160,7 @@
               <li class="catalog-item">
                 <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
                 <div class="hidden-menu">
-                  <h3>Mishka</h3>
+                  <a href="#nowhere">Mishka</a>
                   <p>Интернет-магазин<br> вязаных игрушек</p>
                   <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
                 </div>
@@ -167,7 +168,7 @@
               <li class="catalog-item">
                 <img src="img/aplus.jpg" width="360" height="576" alt="A Plus">
                 <div class="hidden-menu">
-                  <h3>A Plus</h3>
+                  <a href="#nowhere">A Plus</a>
                   <p>Лендинг курсов повышения квалификации</p>
                   <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
                 </div>
@@ -175,7 +176,7 @@
               <li class="catalog-item">
                 <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
                 <div class="hidden-menu">
-                  <h3>Кваст</h3>
+                  <a href="#nowhere">Кваст</a>
                   <p>Промо-сайт производителя крафтового кваса</p>
                   <a class="button" href="#nowhere"><b>9 900 руб.</b></a>
                 </div>
@@ -199,9 +200,9 @@
             <b>Nёrds design studio</b>
             <div class="contact">
               191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная,д.19/8<br>
+              ул. Б. Конюшенная, д. 19/8<br>
               <div class="phone">тел.
-                <a href="tel:+78122757575">+7(812)275-75-75</a>
+                <a href="tel:+78122757575">+7 (812) 275-75-75</a>
               </div>
             </div>
             <a href="#modal" class="button">Напишите нам</a>
@@ -246,7 +247,7 @@
             <a class="social-button" href="https://vk.com/feed">
               <span class="visually-hidden">Вконтакте</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
-                <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" fill="#fff"></path>
+                <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"></path>
               </svg>
             </a>
           </li>
@@ -254,7 +255,7 @@
             <a class="social-button" href="https://www.facebook.com">
               <span class="visually-hidden">Фейсбук</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff">
+                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z">
                 </path >
               </svg>
             </a>
