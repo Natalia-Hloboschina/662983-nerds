@@ -218,6 +218,7 @@ img {
 .slider-controls .slide-control {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -285,9 +286,9 @@ img {
 
 .slide-1 {
   margin: 0;
-  padding: 0;
   margin-top: 9px;
   margin-bottom: -4px;
+  padding: 0;
   width: 728px;
 }
 
@@ -354,7 +355,7 @@ img {
   margin-bottom: 34px;
 }
 
-.features .container {
+.features {
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -368,9 +369,16 @@ img {
 }
 
 .feature-item {
+  padding: 0;
+  margin: 0;
   width: 300px;
   margin-right: 100px;
   padding-bottom: 80px;
+}
+
+.feature-item img {
+  width: 300px;
+  height: 146px;
 }
 
 .feature-item:last-child {
@@ -378,19 +386,19 @@ img {
 }
 
 .feature-item h3 {
-  margin-top: 19px;
+  margin-top: 18px;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .feature-item p {
-  margin: -9px 0;
+  margin: -8px 0;
   width: 250px;
 }
 
 .feature-item .button {
-  margin-top: 40px;
+  margin-top: 39px;
 }
 
 .illustration-2 .button {
@@ -426,7 +434,7 @@ img {
 
 .studio {
   background-color: #ffffff;
-  margin-bottom: 76px;
+  margin-bottom: 79px;
 }
 
 .studio-itemes {
@@ -544,17 +552,39 @@ img {
   border-bottom: 2px solid #eeeeee;
 }
 
+.nav-site .nav-html {
+  width: 199px;
+  height: 68px;
+}
+
+.nav-site .nav-borodinski {
+  width: 209px;
+  height: 90px;
+}
+
+.nav-pink li {
+  width: 185px;
+  height: 52px;
+}
+
+.nav-site .nav-mishka {
+  width: 173px;
+  height: 84px;
+}
+
 .nav-site img {
   opacity: 0.3;
 }
 
 .nav-site li:nth-child(1) {
-  padding-left: 32px;
-  padding-top: 16px;
+  padding-left: 31px;
+  padding-top: 17px;
+  ;
 }
 
 .nav-site li:nth-child(2) {
-  padding-right: 2px;
+  padding-top: 1px;
+  padding-right: 6px;
 }
 
 .nav-site li:nth-child(3) {
@@ -564,7 +594,7 @@ img {
 
 .nav-site li:nth-child(4) {
   padding-right: 42px;
-  padding-top: 8px;
+  padding-top: 7px;
 }
 
 .nav-site img:hover {
@@ -582,8 +612,7 @@ img {
 .nav-site li::after {
   content: "";
   position: absolute;
-  bottom: 45px;
-  left: -85px;
+  bottom: 52px;
   width: 52px;
   height: 2px;
   background-color: #eeeeee;
@@ -591,11 +620,12 @@ img {
 }
 
 .nav-site li:nth-child(2)::after {
-  left: -70px
+  left: -72px
 }
 
 .nav-site li:nth-child(3)::after {
-  bottom: 27px;
+  left: -84px;
+  bottom: 31px;
 }
 
 .nav-site li:nth-child(4)::after {
@@ -620,7 +650,7 @@ img {
   padding: 0;
   position: absolute;
   top: 55px;
-  padding: 50px 51px;
+  padding: 49px 49px;
   background-color: white;
 }
 
@@ -652,8 +682,8 @@ img {
 }
 
 .contacts-nerds .button {
-  padding: 16px 43px;
-  margin-top: 36px;
+  padding: 17px 45px;
+  margin-top: 33px;
 }
 
 
@@ -761,13 +791,13 @@ img {
   bottom: -2060px;
 }
 
-
-/*.modal:target {
+.modal:target {
   display: block;
-}*/
+}
 
 .modal-close {
   display: inline-block;
+  vertical-align: middle;
   opacity: 0.5;
 }
 
@@ -814,7 +844,7 @@ img {
 
 .main-footer {
   background-color: #ffffff;
-  padding-top: 64px;
+  padding-top: 58px;
   margin-bottom: 70px;
 }
 
@@ -835,7 +865,7 @@ img {
 }
 
 .discounts {
-  padding-top: 14px;
+  padding-top: 18px;
   width: 580px;
 }
 
