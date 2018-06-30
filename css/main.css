@@ -782,6 +782,10 @@ img {
   border: 2px solid #d7dcde;
 }
 
+.login-item textarea {
+  resize: vertical;
+}
+
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
@@ -827,6 +831,8 @@ img {
 }
 
 .login-form .button {
+  margin-top: 50px;
+  margin-bottom: 87px;
   padding: 18px 84px;
 }
 
