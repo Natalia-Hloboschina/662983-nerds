@@ -890,7 +890,7 @@ img {
 
 .range-filter {
   width: 260px;
-  margin-top: 40px;
+  margin-top: 51px;
   margin-bottom: 54px;
 }
 
@@ -906,7 +906,7 @@ img {
 }
 
 .filter-item {
-  padding: 0;
+  margin: 0 padding: 0;
 }
 
 .filters legend {
@@ -916,11 +916,15 @@ img {
   font-weight: 500;
 }
 
+.filter-item legend {
+  letter-spacing: 0.7px;
+}
+
 .range-controls {
   position: relative;
-  margin-bottom: 12px;
-  padding-top: 48px;
-  padding-bottom: 40px;
+  margin-bottom: 13px;
+  padding-top: 36px;
+  padding-bottom: 41px;
   padding-right: 20px;
   padding-left: 25px;
   background-color: #f1f1f1;
@@ -940,7 +944,7 @@ img {
 
 .range-controls .toggle {
   position: absolute;
-  top: 38px;
+  top: 28px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -964,7 +968,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 258px;
+  width: 260px;
 }
 
 .price-controls label {
@@ -973,9 +977,9 @@ img {
 }
 
 .price-controls input {
-  width: 79px;
-  padding: 10px 1px;
-  margin-left: 5px;
+  width: 80px;
+  padding: 10px 0;
+  margin-left: 9px;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -1153,8 +1157,8 @@ fieldset:nth-child(3) .filter-option {
 .template-directory {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
-  width: 761px;
+  margin-bottom: 57px;
+  width: 760px;
 }
 
 .sorting-template,
