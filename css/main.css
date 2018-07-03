@@ -77,9 +77,6 @@ img {
   background-color: #000000;
 }
 
-
-/*main-header*/
-
 .main-header {
   margin-bottom: 0;
   background-color: #eeeeee;
@@ -181,9 +178,6 @@ img {
   height: 2px;
   background-color: #fb565a;
 }
-
-
-/*.slider*/
 
 .slider {
   position: relative;
@@ -345,9 +339,6 @@ img {
   padding: 16px 0;
 }
 
-
-/*.features*/
-
 .features {
   margin-bottom: 34px;
   background-color: #ffffff;
@@ -424,9 +415,6 @@ img {
   background-color: #e5a722;
 }
 
-
-/*studio*/
-
 .studio {
   background-color: #ffffff;
   margin-bottom: 80px;
@@ -493,9 +481,6 @@ img {
   height: 2px;
   background-color: #fb565a;
 }
-
-
-/*promo*/
 
 .promo {
   display: flex;
@@ -583,9 +568,6 @@ img {
   transform: rotate(90deg);
 }
 
-
-/*contacts*/
-
 .contacts {
   height: 416px;
   position: relative;
@@ -642,9 +624,6 @@ img {
   padding: 16px 45px;
   margin-top: 35px;
 }
-
-
-/*modal*/
 
 @keyframes bounce {
   0% {
@@ -802,9 +781,6 @@ img {
   animation: shake 0.6s;
 }
 
-
-/*main-footer*/
-
 .main-footer {
   background-color: #ffffff;
   padding-top: 58px;
@@ -865,9 +841,6 @@ img {
   fill: #e37376;
 }
 
-
-/*filters-header*/
-
 .filters-header {
   background-color: #eeeeee;
 }
@@ -907,7 +880,8 @@ img {
 }
 
 .filter-item {
-  margin: 0 padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .filters legend {
@@ -1156,9 +1130,6 @@ fieldset:nth-child(3) .filter-option {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
   background-color: #d5d5d5;
 }
-
-
-/*template-directory*/
 
 .template-directory {
   display: flex;
