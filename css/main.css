@@ -556,8 +556,6 @@ img {
   align-self: flex-end;
 }
 
-
-
 .nav-site li {
   opacity: 0.3;
 }
@@ -612,11 +610,9 @@ img {
   text-align: left;
 }
 
-
 .contacts iframe {
   position: relative;
   z-index: 0;
-
   border: none;
 }
 
@@ -1052,7 +1048,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .filter-input-checkbox+label:hover::before,
-.filter-input-checkbox+label:focus::before{
+.filter-input-checkbox+label:focus::before {
   opacity: 0.8;
 }
 
@@ -1071,7 +1067,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .filter-input-checkbox:hover+label::after,
-.filter-input-checkbox:focus+label::after{
+.filter-input-checkbox:focus+label::after {
   opacity: 1;
 }
 
@@ -1088,7 +1084,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .filter-input-radio:hover+label::before,
-.filter-input-radio:focus+label::before{
+.filter-input-radio:focus+label::before {
   opacity: 1;
 }
 
@@ -1107,7 +1103,7 @@ fieldset:nth-child(3) .filter-option {
 .filter-input:hover+label,
 .filter-input-radio:hover+label::after,
 .filter-input:focus+label,
-.filter-input-radio:focus+label::after{
+.filter-input-radio:focus+label::after {
   opacity: 1;
 }
 
@@ -1284,7 +1280,6 @@ fieldset:nth-child(3) .filter-option {
 .catalog-item .hidden-menu:focus-within {
   opacity: 1;
 }
-
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
