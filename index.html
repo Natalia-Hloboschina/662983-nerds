@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Дизайн-студия "Нёрдс"</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-navigation container">
+      <nav class="main-navigation container">
         <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
@@ -26,7 +26,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
@@ -140,19 +140,20 @@
               </table>
             </div>
           </div>
-          <nav>
-            <ul class="nav-site logo">
-              <li><a class="nav-html" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="260" height="90" alt="Логотип htmlacademy"></a></li>
-              <li><a class="nav-borodinski" href="#nowhere"><img src="img/borodinski-logo.png" width="260" height="90" alt="Логотип borodinski"></a></li>
-              <li><a class="nav-pink" href="#nowhere"><img src="img/pink-logo.png" width="260" height="90" alt="Логотип pink"></a></li>
-              <li><a class="nav-mishka" href="#nowhere"><img src="img/mishka-logo.png" width="260" height="90" alt="Логотип mishka"></a></li>
+          <div class="customers">
+            <ul class="nav-site">
+              <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="260" height="90" alt="Логотип htmlacademy"></a></li>
+              <li><a href="#nowhere"><img src="img/borodinski-logo.png" width="260" height="90" alt="Логотип borodinski"></a></li>
+              <li><a href="#nowhere"><img src="img/pink-logo.png" width="260" height="90" alt="Логотип pink"></a></li>
+              <li><a href="#nowhere"><img src="img/mishka-logo.png" width="260" height="90" alt="Логотип mishka"></a></li>
             </ul>
-          </nav>
+          </div>
         </div>
       </section>
       <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="416" allowfullscreen></iframe>
         <div class="container">
-          <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts-nerds">
             <b>Nёrds design studio</b>
             <div class="contact">
@@ -164,7 +165,7 @@
             </div>
             <a href="#modal" class="button modal-button">Напишите нам</a>
           </div>
-        </div>
+          </div>
       </section>
       <section class="modal" id="modal">
         <div class="modal-login">
