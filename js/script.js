@@ -11,66 +11,69 @@ var email = popup.querySelector("[name=email]");
 var isStorageSupport = true;
 var storage = "";
 
-try
-{
+try {
   storage = localStorage.getItem("fullname");
 }
-catch (err)
-{
+catch (err) {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function (evt)
-{
+link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
 
-  if (storage)
-  {
+  if (storage) {
     fullname.value = storage;
     email.focus();
   }
-  else
-  {
+  else {
 
     fullname.focus();
   }
 });
 
-close.addEventListener("click", function (evt)
-{
+close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
 });
 
-form.addEventListener("submit", function (evt)
-{
-  if (!fullname.value || !email.value)
-  {
+form.addEventListener("submit", function (evt) {
+  if (!fullname.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
   }
-  else
-  {
-    if (isStorageSupport)
-    {
+  else {
+    if (isStorageSupport) {
       localStorage.setItem("fullname", fullname.value);
     }
   }
 });
 
-window.addEventListener("keydown", function (evt)
-{
-  if (evt.keyCode === 27)
-  {
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("modal-show"))
-    {
+    if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
     }
   }
 });
+
+function initMap() {
+  var myLatLng = {
+    lat: 59.938794,
+    lng: 30.323083
+  };
+  var map = new google.maps.Map(document.querySelector('#map-container'), {
+    center: myLatLng,
+    disableDefaultUI: true,
+    zoom: 16
+  });
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+  });
+}
