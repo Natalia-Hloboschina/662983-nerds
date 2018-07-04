@@ -67,6 +67,7 @@ img {
 
 .button:active {
   color: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 3px 0 0 hsla(0, 0%, 0%, 0.1);
   background-color: #d7373b;
 }
 
@@ -769,6 +770,7 @@ img {
   margin-top: 50px;
   margin-bottom: 87px;
   padding: 18px 84px;
+  border-radius: 3px;
 }
 
 .modal-show {
@@ -1126,7 +1128,6 @@ fieldset:nth-child(3) .filter-option {
 
 .inner-page .filter-button:active {
   color: rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 3px 0 0 #bfbfbf;
   background-color: #d5d5d5;
 }
 
@@ -1350,7 +1351,7 @@ fieldset:nth-child(3) .filter-option {
 }
 
 .pagination-item a:active {
-  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  box-shadow: inset 0px 3px 0 0 hsla(0, 0%, 0%, 0.1);
   color: rgba(0, 0, 0, 0.5);
   background-color: #d5d5d5;
 }
